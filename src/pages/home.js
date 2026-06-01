@@ -42,7 +42,7 @@ export function Home() {
     </section>
 
     <div class="hero-image-wrapper">
-      <img src="/src/assets/images/OurVillas.png" alt="Our Douro Villas" class="hero-image" />
+      <img src="${OurVillas}" alt="Our Douro Villas" class="hero-image" />
     </div>
 
     <section class="about">
