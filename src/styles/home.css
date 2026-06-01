@@ -1,0 +1,208 @@
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.title {
+  color: var(--primary);
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 74px;
+
+  font-weight: 400;
+
+  letter-spacing: -3px;
+
+  text-align: start;
+
+  margin: -320px 0px 40px -120px;
+}
+
+.subtitle {
+  color: white;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 68px;
+
+  letter-spacing: -2px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  margin: 65px 0px 20px 0px;
+}
+
+.subtitle span {
+  color: var(--primary);
+
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.subsubtitle {
+  font-size: 30px;
+  font-family: 'DM Sans', serif;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+
+  text-align: center;
+  color: var(--light-gray);
+
+  margin: 25px 0px 0px 0px;
+}
+.hero-image-wrapper {
+  width: 100%;
+  margin: -380px auto 80px auto;
+  text-align: center;
+}
+
+.hero-image {
+  width: auto;
+  height: 98px;
+  object-fit: contain;
+}
+
+.about {
+  width: 95%;
+  max-width: 1900px;
+
+  margin: 60px auto 0 auto;
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 0 55px;
+  gap: 280px;
+}
+
+.about-left {
+  width: 100%;
+  max-width: 900px;
+}
+.about-right {
+  width: 100%;
+  max-width: 980px;
+}
+
+.about p {
+  font-size: 29px;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.2px;
+
+  color: var(--light-gray);
+
+  margin-bottom: 52px;
+
+  font-family: 'Red Hat Display', sans-serif;
+
+  font-weight: 500;
+
+  text-align: left;
+}
+.divider {
+  width: 100%;
+
+  height: 1px;
+
+  background: #6d6d6d;
+
+  margin-top: 50px;
+}
+
+.experiences {
+  width: 90%;
+  max-width: 1800px;
+  margin: 95px auto;
+  padding: 0 20px 0 -10px;
+}
+
+.experiences-title {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 63px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--light-gray);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px 0px 100px 0px;
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1 40px;
+  gap: 20px;
+}
+
+.experience-card {
+  border: 1.5px solid var(--light-gray);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 14px;
+}
+
+.card-title {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: var(--light-gray);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-subtitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--light-gray);
+}
+
+.card-images {
+  display: grid;
+  grid-template-columns: 325px 325px;
+  gap: 38px;
+  width: 100%;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.card-images img {
+  width: 100%;
+  aspect-ratio: 3.6/4;
+  object-fit: cover;
+  filter: brightness(100%),
+  background-color rgba(0, 0, 0, 0.5);
+}
+
+.card-link {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--light-gray);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-top: 10px;
+}
+
+.card-link:hover {
+  color: var(--primary);
+}
