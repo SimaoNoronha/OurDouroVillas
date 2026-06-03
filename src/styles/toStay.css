@@ -1,0 +1,243 @@
+/* HERO COM IMAGEM DE FUNDO */
+.to-stay-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(30px, 5vw, 60px) clamp(20px, 3vw, 40px);
+}
+
+/* OVERLAY ESCURO */
+.to-stay-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* CONTEÚDO POR CIMA DO OVERLAY */
+.to-stay-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+/* TÍTULO — fica no centro vertical */
+.to-stay-hero-title {
+  color: var(--white);
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: clamp(2.5rem, 5.5vw, 78px); /* máx 78px */
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: clamp(80px, 20vw, 288px); /* máx 288px */
+}
+
+/* TEXTO DESCRITIVO — fica em baixo */
+.to-stay-hero-description {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1rem, 2vw, 29px); /* máx 29px */
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: var(--white);
+  max-width: 1900px;
+  margin-bottom: clamp(-50px, -5vw, -30px);
+  padding: 0 20px;
+}
+
+/* BACK LINK (fora da hero) */
+.to-stay-back {
+  text-align: center;
+  margin: clamp(30px, 5vw, 60px) 0 clamp(50px, 8vw, 100px) 0;
+}
+
+.to-stay-back-link {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(0.95rem, 1.4vw, 22px); /* máx 22px */
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--light-gray);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-transform: uppercase;
+}
+
+.to-stay-back-link:hover {
+  color: var(--primary);
+}
+
+.suites {
+  background: #dbdbdb;
+  padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 60px);
+}
+
+.suites-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: clamp(20px, 2vw, 30px);
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.suite-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.suite-name {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1.25rem, 2vw, 30.5px); /* máx 30.5px */
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--blue-gray);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.suite-img {
+  width: 100%;
+  height: clamp(220px, 25vw, 380px); /* máx 380px */
+  object-fit: cover;
+}
+
+.suite-desc {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1rem, 1.5vw, 24px); /* máx 24px */
+  font-weight: 400;
+  line-height: 1.5;
+  margin: clamp(15px, 2vw, 30px) 0 clamp(25px, 3.5vw, 50px) 0;
+  color: var(--blue-gray);
+  text-align: center;
+}
+
+.suite-info-box {
+  border: 2px solid #8e898a;
+  padding: clamp(20px, 2.5vw, 30px) clamp(8px, 1vw, 10px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 6vw, 80px);
+  margin-top: auto;
+}
+
+.suite-info-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.suite-guests {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(0.85rem, 1.15vw, 18px); /* máx 18px */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--blue-gray);
+  white-space: nowrap;
+}
+
+.suite-icons {
+  display: flex;
+  gap: clamp(4px, 0.6vw, 8px);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.suite-icons svg {
+  width: clamp(20px, 2vw, 30px); /* máx 30px */
+  height: clamp(20px, 2vw, 30px);
+  color: #8f8989;
+  flex-shrink: 0;
+}
+
+.suite-amenities {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1.2fr;
+  gap: 0px 10px;
+}
+
+.suite-amenities span {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(0.8rem, 1.15vw, 18px); /* máx 18px */
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--blue-gray);
+  text-transform: uppercase;
+}
+
+.suites-grid .suite-col:first-child .suite-amenities {
+  grid-template-columns: 1.7fr 1.2fr 1.2fr;
+}
+
+/* ===========================
+   RESPONSIVO — TABLET
+   =========================== */
+@media (max-width: 1024px) {
+  .suites-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .to-stay-hero {
+    min-height: 90vh;
+  }
+
+  .to-stay-hero-content {
+    min-height: 75vh;
+  }
+}
+
+/* ===========================
+   RESPONSIVO — TELEMÓVEL
+   =========================== */
+@media (max-width: 640px) {
+  .suites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .suites {
+    padding: 40px 20px;
+  }
+
+  .to-stay-hero {
+    min-height: 80vh;
+    padding: 30px 20px;
+  }
+
+  .to-stay-hero-content {
+    min-height: 70vh;
+  }
+
+  .to-stay-hero-title {
+    margin-top: 60px;
+  }
+
+  .to-stay-hero-description {
+    margin-bottom: 0;
+  }
+
+  .suite-amenities {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .suites-grid .suite-col:first-child .suite-amenities {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .suite-info-top {
+    justify-content: center;
+  }
+}

@@ -114,7 +114,7 @@ export function Home() {
         <img src="${ToStay3}" alt="Villa terrace" />
         <img src="${ToStay4}" alt="Villa garden" />
       </div>
-      <a href="#" class="card-link">READ MORE</a>
+      <a href="#/to-stay" class="card-link">READ MORE</a>
     </div>
 
     <div class="experience-card">
