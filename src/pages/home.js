@@ -126,7 +126,7 @@ export function Home() {
         <img src="${ToRelax3}" alt="Massage 3" />
         <img src="${ToRelax4}" alt="Massage 4" />
       </div>
-      <a href="#" class="card-link">READ MORE</a>
+      <a href="#/to-relax" class="card-link">READ MORE</a>
     </div>
 
     <div class="experience-card">
@@ -138,7 +138,7 @@ export function Home() {
         <img src="${ToEat3}" alt="Food 3" />
         <img src="${ToEat4}" alt="Food 4" />
       </div>
-      <a href="#" class="card-link">READ MORE</a>
+      <a href="#/to-eat" class="card-link">READ MORE</a>
     </div>
 
     <div class="experience-card">

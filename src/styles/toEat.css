@@ -1,0 +1,307 @@
+/* HERO COM IMAGEM DE FUNDO */
+.to-eat-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(30px, 5vw, 60px) clamp(20px, 3vw, 40px);
+}
+
+/* OVERLAY ESCURO */
+.to-eat-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* CONTEÚDO POR CIMA DO OVERLAY */
+.to-eat-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+/* TÍTULO — fica no centro vertical */
+.to-eat-hero-title {
+  color: var(--white);
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: clamp(2.5rem, 5.5vw, 78px);
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: clamp(80px, 20vw, 288px);
+}
+
+/* BLOCO DE BAIXO (subtítulo + descrição) */
+.to-eat-hero-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(15px, 2vw, 25px);
+  margin-bottom: clamp(-50px, -5vw, -30px);
+}
+
+/* SUBTÍTULO — "RESTAURANTE SABORES E MEMÓRIAS" */
+.to-eat-hero-subtitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1.1rem, 1.8vw, 28px);
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* DESCRIÇÃO */
+.to-eat-hero-description {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1rem, 2vw, 29px);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: var(--white);
+  max-width: 1900px;
+  padding: 0 20px;
+  margin: 0;
+}
+
+/* ===========================
+   SECÇÃO DE SERVIÇOS — 3 COLUNAS
+   =========================== */
+
+.services-section {
+  background: var(--background-light-gray);
+  padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 60px);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: clamp(20px, 2vw, 30px);
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+/* COLUNA INDIVIDUAL */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+/* BLOCO DE TÍTULO (agrupa título + subtítulo) */
+.service-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+/* TÍTULO — "SABORES E MEMÓRIAS" */
+.service-card-title {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1.25rem, 2vw, 30.5px);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--blue-gray);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* SUBTÍTULO — "RESTAURANT" / "SOUVENIRS" / "CATERING" */
+.service-card-subtitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1.25rem, 2vw, 30.5px);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--blue-gray);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* IMAGEM */
+.service-card-image {
+  width: 100%;
+  height: clamp(220px, 25vw, 380px);
+  object-fit: cover;
+  display: block;
+}
+
+/* DESCRIÇÃO */
+.service-card-description {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1rem, 1.5vw, 24px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--blue-gray);
+  text-align: center;
+  margin: clamp(15px, 2vw, 30px) 0 clamp(25px, 3.5vw, 50px) 0;
+}
+
+/* ===========================
+   BANNER RESTAURANTE
+   =========================== */
+
+.to-eat-banner {
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  background-size: 120%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(30px, 5vw, 60px) clamp(20px, 3vw, 40px);
+}
+
+.to-eat-banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  padding-bottom: clamp(40px, 6vw, 80px);
+}
+
+.to-eat-banner-description {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1rem, 2vw, 29px);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: var(--white);
+  max-width: 1900px;
+  padding: 0 20px;
+  margin: 0;
+  text-align: center;
+}
+
+/* BACK LINK (fora da hero) */
+.to-eat-back {
+  text-align: center;
+  margin: clamp(30px, 5vw, 60px) 0 clamp(50px, 8vw, 100px) 0;
+}
+
+.to-eat-back-link {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(0.95rem, 1.4vw, 22px);
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--light-gray);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-transform: uppercase;
+}
+.to-eat-label {
+  background: var(--background-light-gray);
+  padding: clamp(100px, 4vw, 90px) clamp(20px, 4vw, 60px);
+}
+
+.to-eat-label-text {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 48px);
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--blue-gray);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.to-eat-back-link:hover {
+  color: var(--primary);
+}
+
+/* ===========================
+   RESPONSIVO — TABLET
+   =========================== */
+@media (max-width: 1024px) {
+  .to-eat-hero {
+    min-height: 90vh;
+  }
+
+  .to-eat-hero-content {
+    min-height: 75vh;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .to-eat-banner {
+    min-height: 90vh;
+  }
+
+  .to-eat-banner-content {
+    min-height: 75vh;
+  }
+}
+
+/* ===========================
+   RESPONSIVO — TELEMÓVEL
+   =========================== */
+@media (max-width: 640px) {
+  .to-eat-hero {
+    min-height: 80vh;
+    padding: 30px 20px;
+  }
+
+  .to-eat-hero-content {
+    min-height: 70vh;
+  }
+
+  .to-eat-hero-title {
+    margin-top: 60px;
+  }
+
+  .to-eat-hero-bottom {
+    margin-bottom: 0;
+  }
+
+  .services-section {
+    padding: 40px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .to-eat-banner {
+    height: 50vh;
+    min-height: unset;
+
+    background-size: 280%;
+    background-position: center top;
+  }
+
+  .to-eat-banner-content {
+    min-height: 50vh;
+    padding-bottom: 0;
+    align-items: center;
+  }
+}

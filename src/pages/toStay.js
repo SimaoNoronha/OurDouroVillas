@@ -22,7 +22,7 @@ export function ToStay() {
           family can gather, adjacent to the open-concept living room, completes the 
           experience. Guests will feel right at home and won't want their vacation to 
           end, as they'll have all the amenities of a luxury home where they can 
-          socialize and cook together as a familyOLA.
+          socialize and cook together as a family.
         </p>
       </div>
     </section>
