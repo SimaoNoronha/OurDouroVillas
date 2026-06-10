@@ -150,7 +150,7 @@ export function Home() {
         <img src="${ToExplore3}" alt="Explore 3" />
         <img src="${ToExplore4}" alt="Explore 4" />
       </div>
-      <a href="#" class="card-link">READ MORE</a>
+      <a href="#/to-explore" class="card-link">READ MORE</a>
     </div>
 
   </div>

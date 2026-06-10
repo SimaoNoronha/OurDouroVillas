@@ -1,10 +1,10 @@
 /* HERO COM IMAGEM DE FUNDO */
-.to-stay-hero {
+.to-stay-hero,
+.to-stay-hero-vintage {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 110vh;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -12,6 +12,13 @@
   padding: clamp(30px, 5vw, 60px) clamp(20px, 3vw, 40px);
 }
 
+.to-stay-hero {
+  background-position: center 52.3%;
+}
+
+.to-stay-hero-vintage {
+  background-position: center 38%;
+}
 /* OVERLAY ESCURO */
 .to-stay-hero-overlay {
   position: absolute;
@@ -56,12 +63,6 @@
   max-width: 1900px;
   margin-bottom: clamp(-50px, -5vw, -30px);
   padding: 0 20px;
-}
-
-/* BACK LINK (fora da hero) */
-.to-stay-back {
-  text-align: center;
-  margin: clamp(30px, 5vw, 60px) 0 clamp(50px, 8vw, 100px) 0;
 }
 
 .to-stay-back-link {
@@ -166,7 +167,7 @@
 
 .suite-amenities {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr 1.2fr;
+  grid-template-columns: 1fr 1.2fr 1.2fr;
   gap: 0px 10px;
 }
 
@@ -180,7 +181,117 @@
 }
 
 .suites-grid .suite-col:first-child .suite-amenities {
-  grid-template-columns: 1.7fr 1.2fr 1.2fr;
+  grid-template-columns: 1.7fr 1.5fr 1.2fr;
+}
+
+/* ===========================
+   BANNER (imagem quarto de banho)
+   =========================== */
+ 
+.to-stay-banner {
+  position: relative;
+  width: 100%;
+  height: 130vh;
+  background-size: 110%;
+  background-position: center 47%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(30px, 5vw, 60px) clamp(20px, 3vw, 40px);
+}
+ 
+.to-stay-banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  padding-bottom: clamp(40px, 6vw, 80px);
+}
+ 
+/* LABEL COM TEXTO DESCRITIVO */
+.to-stay-label {
+  background: var(--background-light-gray);
+  padding: clamp(220px, 15vw, 250px) clamp(20px, 4vw, 120px);
+}
+ 
+.to-stay-label-text {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(1rem, 1.5vw, 29px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--blue-gray);
+  text-align: center;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   EXTERIOR AREA AMENITIES
+========================================== */
+
+.exterior-info-box {
+  border: 2px solid #8e898a;
+  padding: clamp(65px, 2.5vw, 120px) clamp(8px, 1vw, 10px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 6vw, 80px);
+  margin-top: auto;
+  max-width: 1900px;
+  margin: 40px auto 0 auto;
+}
+
+.exterior-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.exterior-amenities {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 8px;
+}
+
+.exterior-amenities span {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: clamp(0.8rem, 1.15vw, 18px);
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--blue-gray);
+  text-transform: uppercase;
+}
+.saltwater-img {
+  object-position: center bottom;
+}
+
+.exterior-icons {
+  display: flex;
+  gap: clamp(4px, 0.6vw, 8px);
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+
+.exterior-icons svg {
+  width: clamp(20px, 2vw, 30px);
+  height: clamp(20px, 2vw, 30px);
+  color: #8f8989;
+  flex-shrink: 0;
+}
+/* BACK LINK (fora da hero) */
+.to-stay-back {
+  text-align: center;
+  margin: clamp(30px, 5vw, 60px) 0 clamp(50px, 8vw, 100px) 0;
 }
 
 /* ===========================
@@ -239,5 +350,21 @@
 
   .suite-info-top {
     justify-content: center;
+  }
+  .to-stay-banner {
+    height: 50vh;
+    min-height: unset;
+    background-size: 280%;
+    background-position: center top;
+  }
+ 
+  .to-stay-banner-content {
+    min-height: 50vh;
+    padding-bottom: 0;
+    align-items: center;
+  }
+ 
+  .to-stay-label {
+    padding: 60px 20px;
   }
 }

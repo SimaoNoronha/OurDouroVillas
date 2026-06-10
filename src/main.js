@@ -4,12 +4,14 @@ import { Home } from './pages/home.js'
 import { ToStay } from './pages/toStay.js'
 import { ToEat } from './pages/toEat.js'
 import { ToRelax } from './pages/toRelax.js'
+import { ToExplore } from './pages/toExplore.js'
 
 const routes = {
   '/': Home,
   '/to-stay': ToStay,
   '/to-eat': ToEat,
   '/to-relax': ToRelax,
+  '/to-explore': ToExplore,
 }
 
 function router() {
